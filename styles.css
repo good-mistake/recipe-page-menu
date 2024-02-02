@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Young Serif";
+  src: url("./assets/fonts/young-serif/YoungSerif-Regular.ttf");
+}
+@font-face {
+  font-family: "Outfit";
+  src: url("./assets/fonts/outfit/static/Outfit-Light.ttf");
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #f3e5d8;
+}
+.container {
+  width: 60%;
+  margin: 5% auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+img {
+  width: 100%;
+  border-radius: 12px;
+}
+h1,
+h2,
+h3 {
+  font-family: "Young Serif", sans-serif;
+  font-weight: 300;
+}
+h2,
+h3 {
+  color: #815544;
+}
+p {
+  word-wrap: break-word;
+}
+p,
+li {
+  font-family: "Outfit", sans-serif;
+  margin: 10px 0;
+  padding-inline-start: 10px;
+  font-size: 15px;
+  line-height: 1 5rem;
+  word-wrap: break-word;
+}
+ul,
+ol {
+  padding-inline-start: 20px;
+}
+section {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+section:not(:first-child):not(:last-child),
+.nutrition li:not(:last-child) {
+  border-bottom: 1px solid #c2bbbc;
+}
+section li::marker,
+.nutrition b {
+  color: #815544;
+  font-weight: bold;
+}
+.preparation {
+  background-color: #fff7fc;
+  padding: 15px;
+  border-radius: 20px;
+}
+.preparation h3,
+.preparation ul li::marker {
+  color: #73475b;
+}
+b {
+  font-weight: 700;
+}
+.nutrition {
+  list-style: none;
+}
+.nutrition li {
+  display: flex;
+  padding: 10px 20px;
+}
+.nutrition span {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (max-width: 478px) {
+  .container {
+    width: auto;
+    margin: 0;
+    border-radius: none;
+    padding: 0;
+  }
+  .nutrition span {
+    width: 80%;
+  }
+  p,
+  li {
+    line-height: 2rem;
+  }
+  img {
+    border-radius: 0;
+  }
+  main,
+  h1,
+  p {
+    padding: 0.5rem 1.5rem;
+  }
+}
